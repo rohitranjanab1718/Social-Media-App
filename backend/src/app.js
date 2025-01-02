@@ -8,7 +8,7 @@ require("dotenv").config();
 console.log(process.env.port);
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "http://localhost:7777",
     credentials: true,
   })
 );
