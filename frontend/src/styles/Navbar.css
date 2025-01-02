@@ -1,0 +1,80 @@
+.navbar {
+    background-color: #007bff; /* Primary blue color */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensure the navbar spans full width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    position: fixed; /* Keeps the navbar fixed at the top */
+    top: 0;
+    z-index: 1000; /* Ensures the navbar appears above other elements */
+}
+
+.navbar-container {
+    max-width: 1200px; /* Centers content while allowing it to expand */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-logo:hover {
+    color: #d4d4d4; /* Slightly lighter shade */
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.navbar-links span {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.navbar-button {
+    background-color: #ffffff;
+    color: #007bff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none; /* For Link component */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-button:hover {
+    background-color: #0056b3;
+    color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+    }
+
+    .navbar-button {
+        width: 100%;
+        text-align: center;
+    }
+}
