@@ -12,7 +12,6 @@ const Login = () => {
         try {
             const response =  await loginUser(form);
             localStorage.setItem("token", document.cookie);
-            console.log(response);
             localStorage.setItem("user", JSON.stringify(response.data._id));
             navigate("/");
         } catch (error) {

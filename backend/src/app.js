@@ -8,7 +8,7 @@ require("dotenv").config();
 console.log(process.env.port);
 app.use(
   cors({
-    origin: "http://localhost:7777",
+    origin: ["http://localhost:5173","https://pure-dusk-11100-520bccfde42a.herokuapp.com"],
     credentials: true,
   })
 );
